@@ -45,11 +45,12 @@ public class IPv4 {
 		}
 	}
 
-	public int subnetCalculation(int in){
+	public void subnetCalculation(int in){
 		for(double i = 0; i < 8; i++)
 			if(Math.pow(2, i) == in)
-				return binaryDigits = (int)i;
-		return 0;
+				binaryDigits = (int)i;
+			else
+				binaryDigits = 0; // Equals to zero until alternative?
 	}
 	
 }
